@@ -238,7 +238,7 @@ var main = function() {
     //Fill modal window with tabs universal structure from /portfolio/pages/modal.html
     //and callback tabHanler on success
     $.ajax({
-      url: "/portfolio/pages/modal.html",
+      url: "pages/modal.html",
       cache: false,
       success: function(result) {
         tabHandler(result)
