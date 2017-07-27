@@ -1,0 +1,263 @@
+* {
+  color: rgb(96, 48, 0);
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bree Serif', serif;
+}
+
+.container-fluid.bckgrnd {
+  background: url(/portfolio/img/background-02.jpg) no-repeat center fixed !important;
+  background-size: cover !important;
+}
+
+.navbar-custom {
+  padding: 1px 0 1px 0;
+  border-radius: 0;
+  border-right: none;
+  border-left: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  color: #fff;
+  background-color: rgba(96, 48, 0, 0.6);
+  margin: 0;
+}
+
+.navbar-custom .navbar-nav > li > a {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar-custom .navbar-nav > li > a:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-custom .navbar-nav > li > a:focus {
+  color: rgb(255, 255, 255);
+}
+
+.nav {
+  font-family: 'Bree Serif', serif !important;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+.navbar-custom #reset {
+  font-size: 0.6em;
+  font-size: 1.2vw;
+  text-transform: lowercase;
+  background: rgba(96, 48, 0, 0.2);
+}
+
+.navbar-custom a:focus #reset {
+  color: #fff !important;
+}
+
+.navbar-custom .glyphicon {
+  color: #fff;
+  font-size: 1em;
+  padding-right: 5px;
+}
+
+.navbar-custom li.active > a {
+  color: rgb(96, 48, 0) !important;
+}
+
+.navbar-custom li.active .glyphicon {
+  color: rgb(96, 48, 0);
+}
+
+.tab-pane {
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 3%;
+  padding-bottom: 2%;
+}
+
+.tab-content {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.heading {
+  color: aquamarine;
+  display: inline;
+}
+
+h3 .prj-name {
+  text-transform: uppercase;
+  color: blue;
+}
+
+.container-fluid.intro {
+  margin: 3% 5% 3% 5%;
+  padding: 1% 5% 1% 5%;
+  border-right: 2px solid rgba(96, 48, 0, 0.5);
+  border-left: 2px solid rgba(96, 48, 0, 0.5);
+  font-size: 2vw;
+}
+
+.prj-details {
+  background-color: rgb(255, 237, 201);
+  color: rgb(96, 48, 0);
+}
+
+.modal .modal-body {
+  overflow-y: auto;
+  max-height: 70vh;
+}
+
+.modal-title {
+  color: rgb(96, 48, 0);
+}
+
+.modal-header {
+  background-color: rgb(255, 237, 201);
+}
+
+.img-modal {
+  width: 15em;
+  height: auto;
+}
+
+.prj-launch {
+  font-weight: bold;
+  background-color: rgb(255, 237, 201);
+  color: rgb(96, 48, 0);
+}
+
+.prj-launch:hover {
+  background-color: rgb(255, 226, 170);
+  color: rgb(96, 48, 0);
+}
+
+.prj-launch:focus {
+  background-color: rgb(255, 226, 170);
+  color: rgb(96, 48, 0);
+}
+
+.modal-footer{
+  text-align: center;
+}
+
+.icon-launch {
+  font-size: 1.25em;
+  padding: 0px 10px 0px 0px;
+  color: rgb(96, 48, 0);
+}
+
+.container-fluid.no-padding {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.carousel-inner .carousel-caption {
+  border: 1px solid rgba(96, 48, 0, 0.1);
+  margin: 0;
+  padding: 0 0 4% 0;
+  background-color: rgba(96, 48, 0, 0.5);
+}
+
+.carousel-caption img {
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-caption h3 {
+  text-transform: uppercase;
+  font-weight: 300 !important;
+  font-size: 2.5em;
+  color: rgb(96, 48, 0);
+  text-shadow: none !important;
+  margin-top: 0;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.carousel-caption p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.25em;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin: 3% 8% 2% 8%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.4) !important;
+  position: relative;
+  left: 0;
+  opacity: 1;
+}
+
+.carousel-control .glyphicon {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 5vw;
+}
+
+.carousel .carousel-inner .item .carousel-caption .carousel-logos .carousel-logo {
+  display: inline-block;
+  margin: 0 8px 0 8px;
+  margin: 0 0.3vw 0 0.3vw;
+  width: 60px;
+  width: 6vw;
+  height: 60px;
+  height: 6vw;
+}
+
+.carousel .carousel-inner .item .carousel-caption .carousel-logos .carousel-logo-img {
+  border-radius: 10% !important;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 3%;
+  padding: 0.3vw;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel .carousel-inner .item .carousel-caption .carousel-logos .carousel-logo img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+}
+
+.carousel .carousel-inner .item .carousel-caption .carousel-logos h4 {
+  margin: 0;
+  padding: 2px 0 0 0;
+  position: relative;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1em;
+  font-size: 1.2vw;
+  text-shadow: none !important;
+}
+
+.affix {
+      top: 0;
+      width: 100%;
+      z-index: 1;
+}
+
+.affix + .container-fluid {
+      padding-top: 70px;
+}
+
+@media screen and (max-width: 480px) {
+    .carousel-caption h3 {
+      font-size: 5vw;
+    }
+    .carousel-caption p {
+      font-size: 2.5vw;
+      margin: 2% 5% 2% 5%;
+    }
+    .carousel .carousel-inner .item .carousel-caption .carousel-logos .carousel-logo {
+      height: 9vw;
+    }
+    .carousel .carousel-inner .item .carousel-caption .carousel-logos h4 {
+      font-size: 1.5vw;
+    }
+}
+
+/* Bootstrap extension for grip transformations */

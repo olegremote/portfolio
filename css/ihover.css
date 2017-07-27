@@ -1,0 +1,215 @@
+.ih-item {
+  position: relative;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.ih-item,
+.ih-item * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.ih-item a {
+  color: #333;
+}
+.ih-item a:hover,
+.ih-item a.hover_effect {
+  text-decoration: none;
+}
+.ih-item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0 !important;
+}
+
+.ih-item.square {
+  position: relative;
+  /* box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.3); */
+  box-shadow: none;
+  margin: 8%;
+}
+.ih-item.square .info {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.ih-item.square.effect13 {
+  overflow: hidden;
+}
+
+.ih-item.square.effect13 .img {
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+.ih-item.square.effect13 .prj-thumbnail {
+  margin: 0 !important;
+  background-color: rgba(96, 48, 0, 0.2) !important;
+  padding: 1px !important;
+  /* padding: 1px; */
+  /* backgroung-color: rgba(96, 48, 0, 0.1); */
+  border: 0px solid rgba(96, 48, 0, 0.1);
+  opacity: 0.8 !important;
+}
+
+.ih-item.square.effect13 a:hover .prj-thumbnail,
+.ih-item.square.effect13 a.hover_effect .prj-thumbnail {
+  opacity: 0.3 !important;
+}
+
+.ih-item.square.effect13 .img .fr-container {
+  border-radius: 10% !important;
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 20%;
+  width: 20%;
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  padding: 3px;
+  text-align: center;
+}
+
+.ih-item.square.effect13 .img .fr-container img.framework {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: auto;
+}
+
+.ih-item.square.effect13 .info {
+  /* background: rgba(96, 48, 0, 0.5); */
+  border: 1px solid rgba(96, 48, 0, 0.1);
+  background-color: rgba(96, 48, 0, 0.2);
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out 0.2s;
+  -moz-transition: -moz-transform 0.3s ease-in-out 0.2s;
+  -ms-transition: -ms-transform 0.3s ease-in-out 0.2s;
+  -o-transition: -o-transform 0.3s ease-in-out 0.2s;
+  transition: transform 0.3s ease-in-out 0.2s;
+}
+.ih-item.square.effect13 .info h3 {
+  text-transform: uppercase;
+  color: rgb(96, 48, 0);
+  text-align: center;
+  font-size: 1.5em;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  margin: 30px 0 0 0;
+}
+.ih-item.square.effect13 .info p {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+  border-top: 1px solid rgba(255, 255, 255, 0.7);
+  font-size: 1.25em;
+  position: relative;
+  color: rgb(255, 255, 255);
+  margin: 15% 10% 10% 10%;;
+  padding: 1% 1% 2%;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out 0.3s;
+  -moz-transition: -moz-transform 0.5s ease-in-out 0.3s;
+  -ms-transition: -ms-transform 0.5s ease-in-out 0.3s;
+  -o-transition: -o-transform 0.5s ease-in-out 0.3s;
+  transition: transform 0.5s ease-in-out 0.3s;
+}
+
+.ih-item.square.effect13.left_to_right .info p {
+  -webkit-transform: translateX(300%);
+  -moz-transform: translateX(300%);
+  -ms-transform: translateX(300%);
+  -o-transform: translateX(300%);
+  transform: translateX(300%);
+}
+
+.ih-item.square.effect13.right_to_left .info p {
+  -webkit-transform: translateX(-300%);
+  -moz-transform: translateX(-300%);
+  -ms-transform: translateX(-300%);
+  -o-transform: translateX(-300%);
+  transform: translateX(-300%);
+}
+
+.ih-item.square.effect13 a:hover .info p,
+.ih-item.square.effect13 a.hover_effect .info p {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.ih-item.square.effect13 a:hover .img,
+.ih-item.square.effect13 a.hover_effect .img {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.ih-item.square.effect13 a:hover .info,
+.ih-item.square.effect13 a.hover_effect .info {
+  visibility: visible;
+  opacity: 1;
+}
+
+.ih-item.square.effect13.left_to_right .info {
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+.ih-item.square.effect13.left_to_right a:hover .info,
+.ih-item.square.effect13.left_to_right a.hover_effect .info {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.ih-item.square.effect13.right_to_left .info {
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
+}
+.ih-item.square.effect13.right_to_left a:hover .info,
+.ih-item.square.effect13.right_to_left a.hover_effect .info {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+
+@media screen and (max-width: 768px) {
+    .ih-item.square.effect13 .info p {
+      font-size: 4vw;
+    }
+    .ih-item.square.effect13 .info h3 {
+      font-size: 8vw;;
+    }
+}
