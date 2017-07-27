@@ -47,6 +47,7 @@ var main = function() {
       switch (framework) {
         case "htmlcss":
           cssUrl = "css/style.css";
+          tabJsOrSassIsPresent = 0;
           break;
         case "sass":
           cssUrl = "sass/main.css";
@@ -171,6 +172,7 @@ var main = function() {
       // $(".modal-body").find("#overview").html(tabOverview); //
 
       //
+      console.log(tabJsOrSassIsPresent);
       if (tabJsOrSassIsPresent) { // name Javascript or SASS/SCSS tab
         if ( tabJsOrSassIsPresent === 2 ) {
           $(".modal-body ul.nav.nav-tabs li a[href$='#javascript']").text('sass/scss')
@@ -178,7 +180,7 @@ var main = function() {
           $(".modal-body ul.nav.nav-tabs li a[href$='#javascript']").text('javascript')
         }
       } else { // delete this tab
-        $(".modal-body ul.nav.nav-tabs li a[href$='#javascript']").remove()
+        $(".modal-body ul.nav.nav-tabs li a[href$='#javascript']").parent("li").remove()
       };
       //
 
