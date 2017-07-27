@@ -31,7 +31,7 @@ var main = function() {
 
       var target = $(this).attr("data-target");
       var projectId = String(target).replace("#", "").replace("-more", "");
-      var projectUrl = "/portfolio/prj/" + projectId + "/";
+      var projectUrl = "prj/" + projectId + "/";
 
       // we define type of project based on alt attribute of img tag
       // which displays JQuery or Angular logo
