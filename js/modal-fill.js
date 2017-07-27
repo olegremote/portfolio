@@ -253,7 +253,7 @@ var main = function() {
   $(".prj-details").on('click', tabPaneContent);
 
   // fill modal window
-  $(".modal").on("shown.bs.modal", modalFill);
+  $(".modal").on("show.bs.modal", modalFill);
 
   // we manually clear modal-body html on modal hide
   $(".modal").on("hide.bs.modal", function() {
