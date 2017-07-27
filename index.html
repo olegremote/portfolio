@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Titillium+Web:300i,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/prism.css">
+    <link rel="stylesheet" type="text/css" href="css/ihover.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+
+  <body>
+
+    <!-- TODO: 4. different Prism styles -->
+    <!-- TODO: 9. своя фотка і ім'я зі зменшенням -->
+
+    <!-- start of BOOTSTRAP CAROUSEL that features some best projects -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+         <li data-target="#myCarousel" data-slide-to="1"></li>
+         <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+
+
+        <div class="item active">
+          <img src="img/portfolio0001.jpg" alt="Portfolio">
+          <div class="carousel-caption">
+            <img src="//:0">
+            <h3>My Portfolio</h3>
+            <p>Discover the projects I've created using</p>
+            <div class="carousel-logos">
+              <div class="carousel-logo">
+                <div class="carousel-logo-img">
+                  <img src="img/html5.png" alt="HTML5">
+                </div>
+                <h4>HTML5</h4>
+              </div>
+              <div class="carousel-logo">
+                <div class="carousel-logo-img">
+                  <img src="img/css3.svg" alt="CSS3">
+                </div>
+                <h4>CSS3</h4>
+              </div>
+              <div class="carousel-logo">
+                <div class="carousel-logo-img">
+                  <img src="img/bootstrap.png" alt="Bootstrap">
+                </div>
+                <h4>Bootstrap</h4>
+              </div>
+              <div class="carousel-logo">
+                <div class="carousel-logo-img">
+                  <img src="img/sass.svg" alt="SASS/SCSS">
+                </div>
+                <h4>SASS/SCSS</h4>
+              </div>
+              <div class="carousel-logo">
+                <div class="carousel-logo-img">
+                  <img src="img/jquery.png" alt="JQuery">
+                </div>
+                <h4>JQuery</h4>
+              </div>
+              <div class="carousel-logo">
+                <div class="carousel-logo-img">
+                  <img src="img/angularjs.png" alt="AngularJS">
+                </div>
+                <h4>AngularJS</h4>
+              </div>
+              <div class="carousel-logo">
+                <div class="carousel-logo-img">
+                  <img src="img/react.svg" alt="React">
+                </div>
+                <h4>React</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="img/portfolio0002.jpg" alt="Portfolio: JQuery featured project">
+          <a href="javascript:void(0);" onclick="" data-target="#listeasy-more" data-toggle="modal" class="prj-details">
+            <div class="carousel-caption">
+              <!-- empty img tag is used to point to the right framework -->
+              <!-- which is used in modal-fill.js to load content into -->
+              <!-- CSS and JAVASCRIPT tabs of modal window -->
+              <img src="//:0" alt="jquery" class="framework">
+              <h3>JQuery featured project</h3>
+              <p>ListEasy: simple and beautiful task management with voice command support <br>(uses Annyang JS library)</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="item">
+          <img src="img/portfolio0003.jpg" alt="Portfolio: AngularJS projects">
+          <a href="javascript:void(0);" data-target="#book-end-more" onclick="" data-toggle="modal" class="prj-details">
+          <div class="carousel-caption">
+            <img src="//:0" alt="angularjs" class="framework">
+            <h3>Angular featured project</h3>
+            <p>Book End: a simple book store</p>
+          </div>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!-- end of BOOTSTRAP CAROUSEL -->
+
+    <!-- start of welcoming section container -->
+    <div class="container-fluid intro">
+
+      <p class="text-justify">Portfolio itself is coded from scratch using <strong>JQuery</strong> as well as <strong>HTML</strong>, <strong>CSS</strong>, <strong>Bootstrap</strong>, <strong>AJAX</strong>  and <strong>PrismJS</strong> for code display.</p>
+      <p class="text-justify">The projects listed below were created while I was CodecademyPro student. Use the filter to choose the projects by skill or simply scroll down to see all of them. Click on thumbnail to get more info and test the corresponding project.</p>
+
+    </div> <!-- end of welcoming section container -->
+
+    <!-- start of FILTER: Buttons for filtering portfolio according to the skills used-->
+    <nav class="navbar navbar-default navbar-custom">
+      <ul class="nav navbar-nav">
+        <li id="htmlcss">
+          <a href="javascript:void(0);">
+            <span class="glyphicon glyphicon-check"></span>
+            HTML/CSS
+          </a>
+        </li>
+        <li id="sass">
+          <a href="javascript:void(0);">
+            <span class="glyphicon glyphicon-check"></span>
+            SASS/SCSS
+          </a>
+        </li>
+        <li id="jquery">
+          <a href="javascript:void(0);">
+            <span class="glyphicon glyphicon-check"></span>
+            JQuery
+          </a>
+        </li>
+        <li id="angularjs">
+          <a href="javascript:void(0);">
+            <span class="glyphicon glyphicon-check"></span>
+            AngularJS
+          </a>
+        </li>
+        <li id="react">
+          <a href="javascript:void(0);">
+            <span class="glyphicon glyphicon-check"></span>
+            React
+          </a>
+        </li>
+        <li id="reset">
+          <a href="javascript:void(0);">
+            <span class="glyphicon glyphicon-off"></span>
+            Reset filter
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- end of FILTER -->
+
+    <div class="container-fluid bckgrnd">
+
+      <!-- A list of projects displayed in flexible columns using bootstrap classes -->
+      <div class="projects">
+
+        <!-- start of row -->
+        <div class="row">
+
+          <!-- start of TRAVEL project cell-->
+          <div class="project col-sm-4 col-md-3 col-lg-3">
+
+            <div class="ih-item square effect13 oleg right_to_left">
+              <a href="#" onclick="" data-toggle="modal" data-target="#travel-more" class="prj-details">
+                <div class="img">
+                  <img src="img/travel.jpg" alt="Travel" class="img-thumbnail prj-thumbnail">
+                  <div class="fr-container">
+                    <img src="img/css3.png" alt="htmlcss" class="framework">
+                  </div>
+                </div>
+                <div class="info">
+                  <h3 class="prj-name">Travel</h3>
+                  <p class="prj-description">page styling using classes and ids</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- start of modal window for TRAVEL -->
+            <!-- button triggers modal -->
+
+            <div class="modal fade" id="travel-more" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">TRAVEL: page styling using classes and ids</h4>
+                  </div>
+
+                  <div class="modal-body">
+                    <!-- content of .modal-body is loaded dynamcally via modal-fill.js -->
+                  </div>
+
+                  <div class="modal-footer">
+                    <a href="prj/travel/index.html" target="_blank" class="btn btn-default prj-launch" role="button"><span class="glyphicon glyphicon-plane icon-launch"></span>launch this project</a>
+                    <div class="small text-center">(opens a new window)</div>
+                  </div><!-- .modal-footer closing div of TRAVEL cell -->
+
+                </div><!-- .modal-content .modal-dialog .modal closing div of TRAVEL cell -->
+              </div><!-- .modal-dialog .modal closing div of TRAVEL cell -->
+            </div><!-- .modal closing div of TRAVEL cell -->
+            <!-- end of modal window for TRAVEL -->
+
+          </div><!-- .project closing div of TRAVEL cell-->
+          <!-- end of TRAVEL project cell -->
+
+          <!-- start of AMAZING SPACE project cell-->
+          <div class="project col-sm-4 col-md-3 col-lg-3">
+
+            <div class="ih-item square effect13 oleg right_to_left">
+              <a href="#" onclick="" data-target="#amazing-space-more" data-toggle="modal" class="prj-details">
+                <div class="img">
+                  <img src="img/amazing-space.jpg" alt="Amazing Space" class="img-thumbnail prj-thumbnail">
+                  <div class="fr-container">
+                    <img src="img/css3.png" alt="htmlcss" class="framework">
+                  </div>
+                </div>
+                <div class="info">
+                  <h3 class="prj-name">Amazing Space</h3>
+                  <p class="prj-description">using media queries for responsive design</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- start of modal window for AMAZING SPACE -->
+            <!-- button triggers modal -->
+
+            <div class="modal fade" id="amazing-space-more" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">AMAZING SPACE: using media queries for responsive design</h4>
+                  </div>
+
+                  <div class="modal-body">
+                    <!-- content of .modal-body is loaded dynamcally via modal-fill.js -->
+                  </div>
+
+                  <div class="modal-footer">
+                    <a href="prj/amazing-space/index.html" target="_blank" class="btn btn-default prj-launch" role="button"><span class="glyphicon glyphicon-plane icon-launch"></span>launch this project</a>
+                    <div class="small text-center">(opens a new window)</div>
+                  </div><!-- .modal-footer closing div of AMAZING SPACE cell -->
+
+                </div><!-- .modal-content .modal-dialog .modal closing div of AMAZING SPACE cell -->
+              </div><!-- .modal-dialog .modal closing div of AMAZING SPACE cell -->
+            </div><!-- .modal closing div of AMAZING SPACE cell -->
+            <!-- end of modal window for AMAZING SPACE -->
+
+          </div><!-- .project closing div of AMAZING SPACE cell-->
+          <!-- end of AMAZING SPACE project cell -->
+
+          <!-- start of CUSTOMER SURVEY project cell-->
+          <div class="project col-sm-4 col-md-3 col-lg-3">
+
+            <div class="ih-item square effect13 oleg right_to_left">
+              <a href="#" onclick="" data-target="#customer-survey-more" data-toggle="modal" class="prj-details">
+                <div class="img">
+                  <img src="img/customer-survey.jpg" alt="Travel" class="img-thumbnail prj-thumbnail">
+                  <div class="fr-container">
+                    <img src="img/css3.png" alt="htmlcss" class="framework">
+                  </div>
+                </div>
+                <div class="info">
+                  <h3 class="prj-name">CUSTOMER SURVEY</h3>
+                  <p class="prj-description">well-designed survey page</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- start of modal window for CUSTOMER SURVEY -->
+            <!-- button triggers modal -->
+
+            <div class="modal fade" id="customer-survey-more" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">CUSTOMER SURVEY: well-designed survey page</h4>
+                  </div>
+
+                  <div class="modal-body">
+                    <!-- content of .modal-body is loaded dynamcally via modal-fill.js -->
+                  </div>
+
+                  <div class="modal-footer">
+                    <a href="prj/customer-survey/index.html" target="_blank" class="btn btn-default prj-launch" role="button"><span class="glyphicon glyphicon-plane icon-launch"></span>launch this project</a>
+                    <div class="small text-center">(opens a new window)</div>
+                  </div><!-- .modal-footer closing div of CUSTOMER SURVEY cell -->
+
+                </div><!-- .modal-content .modal-dialog .modal closing div of CUSTOMER SURVEY cell -->
+              </div><!-- .modal-dialog .modal closing div of CUSTOMER SURVEY cell -->
+            </div><!-- .modal closing div of CUSTOMER SURVEY cell -->
+            <!-- end of modal window for CUSTOMER SURVEY -->
+
+          </div><!-- .project closing div of CUSTOMER SURVEY cell-->
+          <!-- end of CUSTOMER SURVEY project cell -->
+
+          <!-- start of FOR LOOPS project cell-->
+          <div class="project col-sm-4 col-md-3 col-lg-3">
+
+            <div class="ih-item square effect13 oleg right_to_left">
+              <a href="#" onclick="" data-target="#for-loops-more" data-toggle="modal" class="prj-details">
+                <div class="img">
+                  <img src="img/for-loops.jpg" alt="Travel" class="img-thumbnail prj-thumbnail">
+                  <div class="fr-container">
+                    <img src="img/sass.svg" alt="sass" class="framework">
+                  </div>
+                </div>
+                <div class="info">
+                  <h3 class="prj-name">FOR LOOPS</h3>
+                  <p class="prj-description">a rainbow of divs</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- start of modal window for FOR LOOPS -->
+            <!-- button triggers modal -->
+
+            <div class="modal fade" id="for-loops-more" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">FOR LOOPS: a rainbow of divs</h4>
+                  </div>
+
+                  <div class="modal-body">
+                    <!-- content of .modal-body is loaded dynamcally via modal-fill.js -->
+                  </div>
+
+                  <div class="modal-footer">
+                    <a href="prj/for-loops/index.html" target="_blank" class="btn btn-default prj-launch" role="button"><span class="glyphicon glyphicon-plane icon-launch"></span>launch this project</a>
+                    <div class="small text-center">(opens a new window)</div>
+                  </div><!-- .modal-footer closing div of FOR LOOPS cell -->
+
+                </div><!-- .modal-content .modal-dialog .modal closing div of FOR LOOPS cell -->
+              </div><!-- .modal-dialog .modal closing div of FOR LOOPS cell -->
+            </div><!-- .modal closing div of FOR LOOPS cell -->
+            <!-- end of modal window for FOR LOOPS -->
+
+          </div><!-- .project closing div of FOR LOOPS cell-->
+          <!-- end of FOR LOOPS project cell -->
+
+          <!-- start of LEMONADE project cell-->
+          <div class="project col-sm-4 col-md-3 col-lg-3">
+
+            <div class="ih-item square effect13 oleg right_to_left">
+              <a href="#" onclick="" data-target="#lemonade-more" data-toggle="modal" class="prj-details">
+                <div class="img">
+                  <img src="img/lemonade.jpg" alt="Travel" class="img-thumbnail prj-thumbnail">
+                  <div class="fr-container">
+                    <img src="img/sass.svg" alt="sass" class="framework">
+                  </div>
+                </div>
+                <div class="info">
+                  <h3 class="prj-name">Lemonade</h3>
+                  <p class="prj-description">a virtual lemonade stand</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- start of modal window for LEMONADE -->
+            <!-- button triggers modal -->
+
+            <div class="modal fade" id="lemonade-more" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">LEMONADE: a virtual lemonade stand</h4>
+                  </div>
+
+                  <div class="modal-body">
+                    <!-- content of .modal-body is loaded dynamcally via modal-fill.js -->
+                  </div>
+
+                  <div class="modal-footer">
+                    <a href="prj/lemonade/index.html" target="_blank" class="btn btn-default prj-launch" role="button"><span class="glyphicon glyphicon-plane icon-launch"></span>launch this project</a>
+                    <div class="small text-center">(opens a new window)</div>
+                  </div><!-- .modal-footer closing div of LEMONADE cell -->
+
+                </div><!-- .modal-content .modal-dialog .modal closing div of LEMONADE cell -->
+              </div><!-- .modal-dialog .modal closing div of LEMONADE cell -->
+            </div><!-- .modal closing div of LEMONADE cell -->
+            <!-- end of modal window for LEMONADE -->
+
+          </div><!-- .project closing div of LEMONADE cell-->
+          <!-- end of LEMONADE project cell -->
+
+          <!-- start of BONSAI project cell-->
+          <div class="project col-sm-4 col-md-3 col-lg-3">
+
+            <div class="ih-item square effect13 oleg right_to_left">
+              <a href="#" onclick="" data-target="#bonsai-more" data-toggle="modal" class="prj-details">
+                <div class="img">
+                  <img src="img/bonsai.jpg" alt="Bonsai" class="img-thumbnail prj-thumbnail">
+                  <div class="fr-container">
+                    <img src="img/jquery.png" alt="jquery" class="framework">
+                  </div>
+                </div>
+                <div class="info">
+                  <h3 class="prj-name">Bonsai</h3>
+                  <p class="prj-description">a handy mem generator</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- start of modal window for BONSAI -->
+            <!-- button triggers modal -->
+
+            <div class="modal fade" id="bonsai-more" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">BONSAI: a handy mem generator</h4>
+                  </div>
+
+                  <div class="modal-body">
+                    <!-- content of .modal-body is loaded dynamcally via modal-fill.js -->
+                  </div>
+
+                  <div class="modal-footer">
+                    <a href="prj/bonsai/index.html" target="_blank" class="btn btn-default prj-launch" role="button"><span class="glyphicon glyphicon-plane icon-launch"></span>launch this project</a>
+                    <div class="small text-center">(opens a new window)</div>
+                  </div><!-- .modal-footer closing div of BONSAI cell -->
+
+                </div><!-- .modal-content .modal-dialog .modal closing div of BONSAI cell -->
+              </div><!-- .modal-dialog .modal closing div of BONSAI cell -->
+            </div><!-- .modal closing div of BONSAI cell -->
+            <!-- end of modal window for BONSAI -->
+
+          </div><!-- .project closing div of BONSAI cell-->
+          <!-- end of BONSAI project cell -->
+
+          <!-- start of POCKETBOOK project cell-->
+          <div class="project col-sm-4 col-md-3 col-lg-3">
+
+            <div class="ih-item square effect13 oleg left_to_right">
+              <a href="#" onclick="" data-target="#pocketbook-more" data-toggle="modal" class="prj-details">
+                <div class="img">
+                  <img src="img/pocketbook.jpg" alt="Pocketbook" class="img-thumbnail prj-thumbnail">
+                  <div class="fr-container">
+                    <img src="img/jquery.png" alt="jquery" class="framework">
+                  </div>
+                </div>
+                <div class="info">
+                  <h3 class="prj-name">Pocketbook</h3>
+                  <p class="prj-description">sign up form checker</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- start of modal window for POCKETBOOK -->
+            <!-- button triggers modal -->
+
+            <div class="modal fade" id="pocketbook-more" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">POCKETBOOK: sign up form checker</h4>
+                  </div>
+
+                  <div class="modal-body">
+                    <!-- content of .modal-body is loaded dynamcally via modal-fill.js -->
+                  </div>
+
+                  <div class="modal-footer">
+                    <a href="prj/pocketbook/index.html" target="_blank" class="btn btn-default prj-launch" role="button"><span class="glyphicon glyphicon-plane icon-launch"></span>launch this project</a>
+                    <div class="small text-center">(opens a new window)</div>
+                  </div><!-- .modal-footer closing div of POCKETBOOK cell -->
+
+                </div><!-- .modal-content .modal-dialog .modal closing div of POCKETBOOK cell -->
+              </div><!-- .modal-dialog .modal closing div of POCKETBOOK cell -->
+            </div><!-- .modal closing div of POCKETBOOK cell -->
+            <!-- end of modal window for POCKETBOOK -->
+
+          </div><!-- closing .div of POCKETBOOK cell -->
+          <!-- end of POCKETBOOK project cell-->
+
+          <!-- start of THREADLY project cell-->
+          <div class="project col-sm-4 col-md-3 col-lg-3">
+
+            <div class="ih-item square effect13 oleg right_to_left">
+              <a href="#" onclick="" data-target="#threadly-more" data-toggle="modal" class="prj-details">
+                <div class="img">
+                  <img src="img/threadly.jpg" alt="Threadly" class="img-thumbnail prj-thumbnail">
+                  <div class="fr-container">
+                    <img src="img/jquery.png" alt="jquery" class="framework">
+                  </div>
+                </div>
+                <div class="info">
+                  <h3 class="prj-name">Threadly</h3>
+                  <p class="prj-description">basic commenting service</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- start of modal window for THREADLY -->
+            <!-- button triggers modal -->
+
+            <div class="modal fade" id="threadly-more" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">THREADLY: basic commenting service</h4>
+                  </div>
+
+                  <div class="modal-body">
+                    <!-- content of .modal-body is loaded dynamcally via modal-fill.js -->
+                  </div>
+
+                  <div class="modal-footer">
+                    <a href="prj/threadly/index.html" target="_blank" class="btn btn-default prj-launch" role="button"><span class="glyphicon glyphicon-plane icon-launch"></span>launch this project</a>
+                    <div class="small text-center">(opens a new window)</div>
+                  </div><!-- .modal-footer closing div of THREADLY cell -->
+
+                </div><!-- .modal-content .modal-dialog .modal closing div of THREADLY cell -->
+              </div><!-- .modal-dialog .modal closing div of THREADLY cell -->
+            </div><!-- .modal closing div of THREADLY cell -->
+            <!-- end of modal window for THREADLY -->
+
+          </div><!-- closing .div of THREADLY cell -->
+          <!-- end of THREADLY project cell-->
+
+          <!-- start of FORECAST project cell-->
+          <div class="project col-sm-4 col-md-3 col-lg-3">
+
+            <div class="ih-item square effect13 oleg left_to_right">
+
+              <a href="#" onclick="" data-target="#forecast-more" data-toggle="modal" class="prj-details">
+                <div class="img">
+                  <img src="img/forecast.jpg" alt="Forecast" class="img-thumbnail prj-thumbnail">
+                  <div class="fr-container">
+                    <img src="img/jquery.png" alt="jquery" class="framework">
+                  </div>
+                </div>
+                <div class="info">
+                  <h3 class="prj-name">Forecast</h3>
+                  <p class="prj-description">weather forecast for the next 5 days</p>
+                </div>
+              </a>
+
+            </div>
+
+            <!-- start of modal window for FORECAST -->
+            <!-- button triggers modal -->
+
+            <div class="modal fade" id="forecast-more" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">FORECAST: weather forecast for the next 5 days</h4>
+                  </div>
+
+                  <div class="modal-body">
+                    <!-- content of .modal-body is loaded dynamcally via modal-fill.js -->
+                  </div>
+
+                  <div class="modal-footer">
+                    <a href="prj/forecast/index.html" target="_blank" class="btn btn-default prj-launch" role="button"><span class="glyphicon glyphicon-plane icon-launch"></span>launch this project</a>
+                    <div class="small text-center">(opens a new window)</div>
+                  </div><!-- .modal-footer closing div of FORECAST cell -->
+
+                </div><!-- .modal-content .modal-dialog .modal closing div of FORECAST cell -->
+              </div><!-- .modal-dialog .modal closing div of FORECAST cell -->
+            </div><!-- .modal closing div of FORECAST cell -->
+            <!-- end of modal window for FORECAST -->
+
+          </div><!-- closing .div of FORECAST cell -->
+          <!-- end of FORECAST project cell -->
+
+          <!-- start of ARMANDO PEREZ project cell-->
+          <div class="project col-sm-4 col-md-3 col-lg-3">
+
+            <div class="ih-item square effect13 oleg right_to_left">
+
+              <a href="#" onclick="" data-target="#armando-perez-more" data-toggle="modal" class="prj-details">
+                <div class="img">
+                  <img src="img/armando-perez.jpg" alt="Armando Perez" class="img-thumbnail prj-thumbnail">
+                  <div class="fr-container">
+                    <img src="img/jquery.png" alt="jquery" class="framework">
+                  </div>
+                </div>
+                <div class="info">
+                  <h3 class="prj-name">Armando Perez</h3>
+                  <p class="prj-description">portfolio filter</p>
+                </div>
+              </a>
+
+            </div>
+
+            <!-- start of modal window for ARMANDO PEREZ -->
+            <div class="modal fade" id="armando-perez-more" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">ARMANDO PEREZ: portfolio filter</h4>
+                  </div>
+
+                  <div class="modal-body">
+                    <!-- content of .modal-body is loaded dynamcally via modal-fill.js -->
+                  </div>
+
+                  <div class="modal-footer">
+                    <a href="prj/armando-perez/index.html" target="_blank" class="btn btn-default prj-launch" role="button"><span class="glyphicon glyphicon-plane icon-launch"></span>launch this project</a>
+                    <div class="small text-center">(opens a new window)</div>
+                  </div><!-- .modal-footer closing div of ARMANDO PÉREZ cell -->
+
+                </div><!-- .modal-content .modal-dialog .modal closing div of ARMANDO PEREZ cell -->
+              </div><!-- .modal-dialog .modal closing div of ARMANDO PEREZ cell -->
+            </div><!-- .modal closing div of ARMANDO PEREZ cell -->
+            <!-- end of modal window for ARMANDO PEREZ -->
+
+          </div><!-- closing .div of ARMANDO PEREZ cell -->
+          <!-- end of ARMANDO PEREZ project cell-->
+
+          <!-- start of LISTEASY project cell-->
+          <div class="project col-sm-4 col-md-3 col-lg-3">
+
+            <div class="ih-item square effect13 oleg left_to_right">
+
+              <a href="#" onclick="" data-target="#listeasy-more" data-toggle="modal" class="prj-details">
+                <div class="img">
+                  <img src="img/listeasy.jpg" alt="Listeasy" class="img-thumbnail prj-thumbnail">
+                  <div class="fr-container">
+                    <img src="img/jquery.png" alt="jquery" class="framework">
+                  </div>
+                </div>
+                <div class="info">
+                  <h3 class="prj-name">Listeasy</h3>
+                  <p class="prj-description">task management with voice command support</p>
+                </div>
+              </a>
+
+            </div>
+
+            <!-- start of modal window for LISTEASY -->
+            <div class="modal fade" id="listeasy-more" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">LISTEASY: task management with voice command support</h4>
+                  </div>
+
+                  <div class="modal-body">
+                    <!-- content of .modal-body is loaded dynamcally via modal-fill.js -->
+                  </div>
+
+                  <div class="modal-footer">
+                    <a href="prj/listeasy/index.html" target="_blank" class="btn btn-default prj-launch" role="button"><span class="glyphicon glyphicon-plane icon-launch"></span>launch this project</a>
+                    <div class="small text-center">(opens a new window)</div>
+                  </div><!-- .modal-footer closing div of LISTEASY cell -->
+
+                </div><!-- .modal-content .modal-dialog .modal closing div of LISTEASY cell -->
+              </div><!-- .modal-dialog .modal closing div of LISTEASY cell -->
+            </div><!-- .modal closing div of LISTEASY cell -->
+            <!-- end of modal window for LISTEASY -->
+
+          </div><!-- closing .div of LISTEASY cell -->
+          <!-- end of LISTEASY project cell-->
+
+          <!-- start of BIRDMAN project cell-->
+          <div class="project col-sm-4 col-md-3 col-lg-3">
+
+            <div class="ih-item square effect13 oleg right_to_left">
+
+              <a href="#" onclick="" data-target="#birdman-more" data-toggle="modal" class="prj-details">
+                <div class="img">
+                  <img src="img/birdman.jpg" alt="Birdman" class="img-thumbnail prj-thumbnail">
+                  <div class="fr-container">
+                    <img src="img/jquery.png" alt="jquery" class="framework">
+                  </div>
+                </div>
+                <div class="info">
+                  <h3 class="prj-name">Birdman</h3>
+                  <p class="prj-description">dropdown menu</p>
+                </div>
+              </a>
+
+            </div>
+
+            <!-- start of modal window for BIRDMAN -->
+            <div class="modal fade" id="birdman-more" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">BIRDMAN: dropdown menu</h4>
+                  </div>
+
+                  <div class="modal-body">
+                    <!-- content of .modal-body is loaded dynamcally via modal-fill.js -->
+                  </div>
+
+                  <div class="modal-footer">
+                    <a href="prj/birdman/index.html" target="_blank" class="btn btn-default prj-launch" role="button"><span class="glyphicon glyphicon-plane icon-launch"></span>launch this project</a>
+                    <div class="small text-center">(opens a new window)</div>
+                  </div><!-- .modal-footer closing div of BIRDMAN cell -->
+
+                </div><!-- .modal-content .modal-dialog .modal closing div of BIRDMANcell -->
+              </div><!-- .modal-dialog .modal closing div of BIRDMAN cell -->
+            </div><!-- .modal closing div of BIRDMAN cell -->
+            <!-- end of modal window for BIRDMAN -->
+
+          </div><!-- closing .div of BIRDMAN cell -->
+          <!-- end of BIRDMAN project cell-->
+
+          <!-- start of FEEDSTER project cell-->
+          <div class="project col-sm-4 col-md-3 col-lg-3">
+
+            <div class="ih-item square effect13 oleg left_to_right">
+
+              <a href="#" onclick="" data-target="#feedster-more" data-toggle="modal" class="prj-details">
+                <div class="img">
+                  <img src="img/feedster.jpg" alt="Feedster" class="img-thumbnail prj-thumbnail">
+                  <div class="fr-container">
+                    <img src="img/jquery.png" alt="jquery" class="framework">
+                  </div>
+                </div>
+                <div class="info">
+                  <h3 class="prj-name">Feedster</h3>
+                  <p class="prj-description">a simple newsfeed widget</p>
+                </div>
+              </a>
+
+            </div>
+
+            <!-- start of modal window for FEEDSTER -->
+            <div class="modal fade" id="feedster-more" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">FEEDSTER: a simple newsfeed widget</h4>
+                  </div>
+
+                  <div class="modal-body">
+                    <!-- content of .modal-body is loaded dynamcally via modal-fill.js -->
+                  </div>
+
+                  <div class="modal-footer">
+                    <a href="prj/feedster/index.html" target="_blank" class="btn btn-default prj-launch" role="button"><span class="glyphicon glyphicon-plane icon-launch"></span>launch this project</a>
+                    <div class="small text-center">(opens a new window)</div>
+                  </div><!-- .modal-footer closing div of FEEDSTER cell -->
+
+                </div><!-- .modal-content .modal-dialog .modal closing div of FEEDSTER cell -->
+              </div><!-- .modal-dialog .modal closing div of FEEDSTER cell -->
+            </div><!-- .modal closing div of FEEDSTER cell -->
+            <!-- end of modal window for FEEDSTER -->
+
+          </div><!-- closing .div of FEEDSTER cell -->
+          <!-- end of FEEDSTER project cell-->
+
+          <!-- start of GAMEBOARD project cell-->
+          <div class="project col-sm-4 col-md-3 col-lg-3">
+
+            <div class="ih-item square effect13 oleg right_to_left">
+
+              <a href="#" onclick="" data-target="#gameboard-more" data-toggle="modal" class="prj-details">
+                <div class="img">
+                  <img src="img/gameboard.jpg" alt="Gameboard" class="img-thumbnail prj-thumbnail">
+                  <div class="fr-container">
+                    <img src="img/jquery.png" alt="jquery" class="framework">
+                  </div>
+                </div>
+                <div class="info">
+                  <h3 class="prj-name">Gameboard</h3>
+                  <p class="prj-description">NBA scores display</p>
+                </div>
+              </a>
+
+            </div>
+
+            <!-- start of modal window for GAMEBOARD -->
+            <div class="modal fade" id="gameboard-more" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">GAMEBOARD: NBA scores display</h4>
+                  </div>
+
+                  <div class="modal-body">
+                    <!-- content of .modal-body is loaded dynamcally via modal-fill.js -->
+                  </div>
+
+                  <div class="modal-footer">
+                    <a href="prj/gameboard/index.html" target="_blank" class="btn btn-default prj-launch" role="button"><span class="glyphicon glyphicon-plane icon-launch"></span>launch this project</a>
+                    <div class="small text-center">(opens a new window)</div>
+                  </div><!-- .modal-footer closing div of GAMEBOARD cell -->
+
+                </div><!-- .modal-content .modal-dialog .modal closing div of GAMEBOARD cell -->
+              </div><!-- .modal-dialog .modal closing div of GAMEBOARD cell -->
+            </div><!-- .modal closing div of GAMEBOARD cell -->
+            <!-- end of modal window for GAMEBOARD -->
+
+          </div><!-- closing .div of GAMEBOARD cell -->
+          <!-- end of GAMEBOARD project cell-->
+
+          <!-- start of MOVE project cell-->
+          <div class="project col-sm-4 col-md-3 col-lg-3">
+
+            <div class="ih-item square effect13 oleg left_to_right">
+
+              <a href="#" onclick="" data-target="#move-more" data-toggle="modal" class="prj-details">
+                <div class="img">
+                  <img src="img/move.jpg" alt="Gameboard" class="img-thumbnail prj-thumbnail">
+                  <div class="fr-container">
+                    <img src="img/jquery.png" alt="jquery" class="framework">
+                  </div>
+                </div>
+                <div class="info">
+                  <h3 class="prj-name">move</h3>
+                  <p class="prj-description">get suggestions as you type</p>
+                </div>
+              </a>
+
+            </div>
+
+            <!-- start of modal window for MOVE-->
+
+            <div class="modal fade" id="move-more" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">MOVE: get suggestions as you type</h4>
+                  </div>
+
+                  <div class="modal-body">
+                    <!-- content of .modal-body is loaded dynamcally via modal-fill.js -->
+                  </div>
+
+                  <div class="modal-footer">
+                    <a href="prj/move/index.html" target="_blank" class="btn btn-default prj-launch" role="button"><span class="glyphicon glyphicon-plane icon-launch"></span>launch this project</a>
+                    <div class="small text-center">(opens a new window)</div>
+                  </div><!-- .modal-footer closing div of MOVE cell -->
+
+                </div><!-- .modal-content .modal-dialog .modal closing div of MOVE cell -->
+              </div><!-- .modal-dialog .modal closing div of MOVE cell -->
+            </div><!-- .modal closing div of MOVEcell -->
+            <!-- end of modal window for MOVE -->
+
+          </div><!-- closing .div of MOVE cell -->
+          <!-- end of MOVE project cell-->
+
+          <!-- start of MILFORD SCHOOL project cell-->
+          <div class="project col-sm-4 col-md-3 col-lg-3">
+
+            <div class="ih-item square effect13 oleg right_to_left">
+
+              <a href="#" onclick="" data-target="#milford-school-more" data-toggle="modal" class="prj-details">
+                <div class="img">
+                  <img src="img/milford-school.jpg" alt="Milford School" class="img-thumbnail prj-thumbnail">
+                  <div class="fr-container">
+                    <img src="img/jquery.png" alt="jquery" class="framework">
+                  </div>
+                </div>
+                <div class="info">
+                  <h3 class="prj-name">Milford School</h3>
+                  <p class="prj-description">dropdown menu + sigup control</p>
+                </div>
+              </a>
+
+            </div>
+
+            <!-- start of modal window for MILFORD SCHOOL -->
+            <div class="modal fade" id="milford-school-more" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">MILFORD SCHOOL: dropdown menu + sigup control</h4>
+                  </div>
+
+                  <div class="modal-body">
+                    <!-- content of .modal-body is loaded dynamcally via modal-fill.js -->
+                  </div>
+
+                  <div class="modal-footer">
+                    <a href="prj/milford-school/index.html" target="_blank" class="btn btn-default prj-launch" role="button"><span class="glyphicon glyphicon-plane icon-launch"></span>launch this project</a>
+                    <div class="small text-center">(opens a new window)</div>
+                  </div><!-- .modal-footer closing div of MILFORD SCHOOL cell -->
+
+                </div><!-- .modal-content .modal-dialog .modal closing div of MILFORD SCHOOL cell -->
+              </div><!-- .modal-dialog .modal closing div of MILFORD SCHOOL cell -->
+            </div><!-- .modal closing div of MILFORD SCHOOL cell -->
+            <!-- end of modal window for MILFORD SCHOOL -->
+
+          </div><!-- closing .div of MILFORD SCHOOLcell -->
+          <!-- end of MILFORD SCHOOL project cell-->
+
+          <!-- start of MADISON SQUARE MARKET project cell-->
+          <div class="project col-sm-4 col-md-3 col-lg-3">
+
+            <div class="ih-item square effect13 oleg left_to_right">
+
+              <a href="#" onclick="" data-target="#madison-square-market-more" data-toggle="modal" class="prj-details">
+                <div class="img">
+                  <img src="img/madison-square-market.jpg" alt="Madison Square Market" class="img-thumbnail prj-thumbnail">
+                  <div class="fr-container">
+                    <img src="img/jquery.png" alt="jquery" class="framework">
+                  </div>
+                </div>
+                <div class="info">
+                  <h3 class="prj-name">Madison Square Market</h3>
+                  <p class="prj-description">dropdown menus</p>
+                </div>
+              </a>
+
+            </div>
+
+            <!-- start of modal window for MADISON SQUARE MARKET -->
+            <div class="modal fade" id="madison-square-market-more" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">MADISON SQUARE MARKET: dropdown menus</h4>
+                  </div>
+
+                  <div class="modal-body">
+                    <!-- content of .modal-body is loaded dynamcally via modal-fill.js -->
+                  </div>
+
+                  <div class="modal-footer">
+                    <a href="prj/madison-square-market/index.html" target="_blank" class="btn btn-default prj-launch" role="button"><span class="glyphicon glyphicon-plane icon-launch"></span>launch this project</a>
+                    <div class="small text-center">(opens a new window)</div>
+                  </div><!-- .modal-footer closing div of MADISON SQUARE MARKET cell -->
+
+                </div><!-- .modal-content .modal-dialog .modal closing div of MADISON SQUARE MARKET cell -->
+              </div><!-- .modal-dialog .modal closing div of MADISON SQUARE MARKET cell -->
+            </div><!-- .modal closing div of MADISON SQUARE MARKET cell -->
+            <!-- end of modal window for MADISON SQUARE MARKET -->
+
+          </div><!-- closing .div of MADISON SQUARE MARKET cell -->
+          <!-- end of MADISON SQUARE MARKET project cell-->
+
+          <!-- start of MOVE Gear project cell-->
+          <div class="project col-sm-4 col-md-3 col-lg-3">
+
+            <div class="ih-item square effect13 oleg right_to_left">
+
+              <a href="#" onclick="" data-target="#move-gear-more" data-toggle="modal" class="prj-details">
+                <div class="img">
+                  <img src="img/move-gear.jpg" alt="Move Gear" class="img-thumbnail prj-thumbnail">
+                  <div class="fr-container">
+                    <img src="img/jquery.png" alt="jquery" class="framework">
+                  </div>
+                </div>
+                <div class="info">
+                  <h3 class="prj-name">Move Gear</h3>
+                  <p class="prj-description">accordion menu</p>
+                </div>
+              </a>
+
+            </div>
+
+            <!-- start of modal window for MOVE Gear -->
+            <div class="modal fade" id="move-gear-more" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">MOVE GEAR: accordion menu</h4>
+                  </div>
+
+                  <div class="modal-body">
+                    <!-- content of .modal-body is loaded dynamcally via modal-fill.js -->
+                  </div>
+
+                  <div class="modal-footer">
+                    <a href="prj/move-gear/index.html" target="_blank" class="btn btn-default prj-launch" role="button"><span class="glyphicon glyphicon-plane icon-launch"></span>launch this project</a>
+                    <div class="small text-center">(opens a new window)</div>
+                  </div><!-- .modal-footer closing div of MOVE Gear cell -->
+
+                </div><!-- .modal-content .modal-dialog .modal closing div of MOVE Gear cell -->
+              </div><!-- .modal-dialog .modal closing div of MOVE Gear cell -->
+            </div><!-- .modal closing div of MOVE Gear cell -->
+            <!-- end of modal window for MOVE Gear -->
+
+          </div><!-- closing .div of MOVE Gear cell -->
+          <!-- end of MOVE Gear project cell-->
+
+          <!-- start of BOOK END project cell-->
+          <div class="project col-sm-4 col-md-3 col-lg-3">
+
+            <div class="ih-item square effect13 oleg left_to_right">
+
+              <a href="#" onclick="" data-target="#book-end-more" data-toggle="modal" class="prj-details">
+                <div class="img">
+                  <img src="img/book-end.jpg" alt="Book End" class="img-thumbnail prj-thumbnail">
+                  <div class="fr-container">
+                    <img src="img/angularjs.png" alt="angularjs" class="framework">
+                  </div>
+                </div>
+                <div class="info">
+                  <h3 class="prj-name">Book End</h3>
+                  <p class="prj-description">a simple book store</p>
+                </div>
+              </a>
+
+            </div>
+
+            <!-- start of modal window for BOOK END -->
+            <div class="modal fade" id="book-end-more" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Book End: a simple book store</h4>
+                  </div>
+
+                  <div class="modal-body">
+                    <!-- content of .modal-body is loaded dynamcally via modal-fill.js -->
+                  </div>
+
+                  <div class="modal-footer">
+                    <a href="prj/book-end/index.html" target="_blank" class="btn btn-default prj-launch" role="button"><span class="glyphicon glyphicon-plane icon-launch"></span>launch this project</a>
+                    <div class="small text-center">(opens a new window)</div>
+                  </div><!-- .modal-footer closing div of BOOK END cell -->
+
+                </div><!-- .modal-content .modal-dialog .modal closing div of BOOK END cell -->
+              </div><!-- .modal-dialog .modal closing div of BOOK END cell -->
+            </div><!-- .modal closing div of BOOK END cell -->
+            <!-- end of modal window for BOOK END -->
+
+          </div><!-- closing .div of BOOK END cell -->
+          <!-- end of BOOK END project cell-->
+
+          <!-- start of BOLT NETWORK project cell-->
+          <div class="project col-sm-4 col-md-3 col-lg-3">
+
+            <div class="ih-item square effect13 oleg left_to_right">
+
+              <a href="#" onclick="" data-target="#bolt-network-more" data-toggle="modal" class="prj-details">
+                <div class="img">
+                  <img src="img/bolt-network.jpg" alt="Bolt network" class="img-thumbnail prj-thumbnail">
+                  <div class="fr-container">
+                    <img src="img/angularjs.png" alt="angularjs" class="framework">
+                  </div>
+                </div>
+                <div class="info">
+                  <h3 class="prj-name">Bolt network</h3>
+                  <p class="prj-description">TV show listings</p>
+                </div>
+              </a>
+
+            </div>
+
+            <!-- start of modal window for BOLT NETWORK -->
+            <div class="modal fade" id="bolt-network-more" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Bolt network: TV show listings</h4>
+                  </div>
+
+                  <div class="modal-body">
+                    <!-- content of .modal-body is loaded dynamcally via modal-fill.js -->
+                  </div>
+
+                  <div class="modal-footer">
+                    <a href="prj/bolt-network/index.html" target="_blank" class="btn btn-default prj-launch" role="button"><span class="glyphicon glyphicon-plane icon-launch"></span>launch this project</a>
+                    <div class="small text-center">(opens a new window)</div>
+                  </div><!-- .modal-footer closing div of BOLT NETWORK cell -->
+
+                </div><!-- .modal-content .modal-dialog .modal closing div of BOLT NETWORK cell -->
+              </div><!-- .modal-dialog .modal closing div of BOLT NETWORK cell -->
+            </div><!-- .modal closing div of BOLT NETWORK cell -->
+            <!-- end of modal window for BOLT NETWORK -->
+
+          </div><!-- closing .div of BOLT NETWORK cell -->
+          <!-- end of BOLT NETWORK project cell-->
+
+          <!-- start of GAMEBOARD2 project cell-->
+          <div class="project col-sm-4 col-md-3 col-lg-3">
+
+            <div class="ih-item square effect13 oleg left_to_right">
+
+              <a href="#" onclick="" data-target="#gameboard2-more" data-toggle="modal" class="prj-details">
+                <div class="img">
+                  <img src="img/gameboard2.jpg" alt="NBA Gameboard" class="img-thumbnail prj-thumbnail">
+                  <div class="fr-container">
+                    <img src="img/angularjs.png" alt="angularjs" class="framework">
+                  </div>
+                </div>
+                <div class="info">
+                  <h3 class="prj-name">NBA Gameboard</h3>
+                  <p class="prj-description">display recent NBA scores (Angular take)</p>
+                </div>
+              </a>
+
+            </div>
+
+            <!-- start of modal window for GAMEBOARD2 -->
+            <div class="modal fade" id="gameboard2-more" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">NBA Gameboard: display recent NBA scores (Angular take)</h4>
+                  </div>
+
+                  <div class="modal-body">
+                    <!-- content of .modal-body is loaded dynamcally via modal-fill.js -->
+                  </div>
+
+                  <div class="modal-footer">
+                    <a href="prj/gameboard2/index.html" target="_blank" class="btn btn-default prj-launch" role="button"><span class="glyphicon glyphicon-plane icon-launch"></span>launch this project</a>
+                    <div class="small text-center">(opens a new window)</div>
+                  </div><!-- .modal-footer closing div of GAMEBOARD2 cell -->
+
+                </div><!-- .modal-content .modal-dialog .modal closing div of GAMEBOARD2 cell -->
+              </div><!-- .modal-dialog .modal closing div of GAMEBOARD2 cell -->
+            </div><!-- .modal closing div of GAMEBOARD2 cell -->
+            <!-- end of modal window for GAMEBOARD2 -->
+
+          </div><!-- closing .div of GAMEBOARD2 cell -->
+          <!-- end of GAMEBOARD2 project cell-->
+
+          <!-- start of FEEDSTER2 project cell-->
+          <div class="project col-sm-4 col-md-3 col-lg-3">
+
+            <div class="ih-item square effect13 oleg left_to_right">
+
+              <a href="#" onclick="" data-target="#feedster2-more" data-toggle="modal" class="prj-details">
+                <div class="img">
+                  <img src="img/feedster2.jpg" alt="FEEDSTER" class="img-thumbnail prj-thumbnail">
+                  <div class="fr-container">
+                    <img src="img/angularjs.png" alt="angularjs" class="framework">
+                  </div>
+                </div>
+                <div class="info">
+                  <h3 class="prj-name">FEEDSTER</h3>
+                  <p class="prj-description">basic social feed (Angular take)</p>
+                </div>
+              </a>
+
+            </div>
+
+            <!-- start of modal window for GAMEBOARD2 -->
+            <div class="modal fade" id="feedster2-more" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">FEEDSTER: basic social feed (Angular take)</h4>
+                  </div>
+
+                  <div class="modal-body">
+                    <!-- content of .modal-body is loaded dynamcally via modal-fill.js -->
+                  </div>
+
+                  <div class="modal-footer">
+                    <a href="prj/feedster2/index.html" target="_blank" class="btn btn-default prj-launch" role="button"><span class="glyphicon glyphicon-plane icon-launch"></span>launch this project</a>
+                    <div class="small text-center">(opens a new window)</div>
+                  </div><!-- .modal-footer closing div of GAMEBOARD2 cell -->
+
+                </div><!-- .modal-content .modal-dialog .modal closing div of GAMEBOARD2 cell -->
+              </div><!-- .modal-dialog .modal closing div of GAMEBOARD2 cell -->
+            </div><!-- .modal closing div of GAMEBOARD2 cell -->
+            <!-- end of modal window for GAMEBOARD2 -->
+
+          </div><!-- closing .div of GAMEBOARD2 cell -->
+          <!-- end of GAMEBOARD2 project cell-->
+
+        </div><!-- .row closing div -->
+        <!-- end of row -->
+
+
+      </div><!-- .projects closing div -->
+
+    </div><!-- .container closing div -->
+
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/1.4.0/annyang.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script src="js/modal.js"></script><!-- from Bootstrap -->
+    <script src="js/tab.js"></script><!-- from Bootstrap -->
+    <script src="js/carousel.js"></script><!-- from Bootstrap -->
+    <script src="js/affix.js"></script><!-- from Bootstrap -->
+    <script src="js/prism.js"></script><!-- code coloring -->
+    <script src="js/modal-fill.js"></script><!-- my script for fillin modal window with content -->
+    <script src="js/hover.js"></script><!-- my script for handling hover
+      and adopting it for touchscreen devices -->
+    <script src="js/animations.js"></script><!-- some JQuery animations -->
+    <script src="js/filter.js"></script><!-- filtering projects based on the main skill used, i.e JQuery,   Angular etc. -->
+
+  </body>
+
+</html>
