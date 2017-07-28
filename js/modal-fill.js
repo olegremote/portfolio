@@ -34,26 +34,33 @@ var main = function() {
       var projectUrl = "prj/" + projectId + "/";
 
       // we define type of project based on alt attribute of img tag
-      // which displays JQuery or Angular logo
-      // for JQuery projects construct css file url as style.css
-      // for AngularJS projects construct css file url as css/main.css
+      // which displays CSS/JQuery/SASS/Angular or React logo
+      var framework = $(this).find(".framework").attr("alt");
+
+      // find modal body that corresponds to clicked ".prj-details" div
+      var $modalBody = $(this).parent(".ih-item").siblings(".modal").find('.modal-body');
+      console.log('modal body now is' + $modalBody.html());
+
+      // initialize url variables that will be used later in AJAX calls
       var cssUrl = "";
       var jsUrl = "";
       var scssUrl = "";
-      var tabJsToSass = false;
+      var tabJsToSass = false; // defines wether to rename Javascript tab to SASS/SCSS
 
-      var framework = $(this).find(".framework").attr("alt");
-
+      // for JQuery projects construct css file url as style.css
+      // for AngularJS projects construct css file url as css/main.css etc.
+      // and similar for jsUrl depending on the internal structure of corresponding projects
       switch (framework) {
         case "htmlcss":
           cssUrl = "css/style.css";
-          tabJsOrSassIsPresent = 0;
+          tabJsOrSassIsPresent = 0; // there is no Javascript (SASS) tab in this case
+          // so later it will be removed from the DOM based on the value of this variable
           break;
         case "sass":
           cssUrl = "sass/main.css";
           jsUrl = "sass/main.scss";
           tabJsToSass = true;
-          tabJsOrSassIsPresent = 2;
+          tabJsOrSassIsPresent = 2; // in this case Javascript tab will be renamed to SASS/SCSS
           break;
         case "jquery":
           cssUrl = "style.css";
@@ -109,9 +116,25 @@ var main = function() {
                 tabJs = "<pre><code id=\"js-code\" class=\"language-javascript\">" + Prism.highlight(result, Prism.languages.javascript) + "</code></pre>";
               }
             }
+          }),
+          // load universal modal window structure
+          // from modal.html
+          $.ajax({
+            url: "pages/modal.html",
+            cache: false,
+            success: function(result) {
+              console.log('modal.html AJAX success');
+              // fill corresponding modal window with universal modal window structure
+              $modalBody.html(result);
+              console.log('modal body now is' + $modalBody.html());
+            }
           })
-        ).then( function (resp1, resp2) {
-          $(target).modal('show');
+        ).then( function () {
+          console.log('Call modal show after AJAX success');
+          console.log('overview is' + tabOverview);
+          // fill overview tab of modal window before modal is opened
+          $modalBody.find("#overview").html(tabOverview);
+          $(target).modal();
         })
       } else { // this case jsUrl = "" so Javascript tab is empty and we execute only
       // 3 ajax calls and when all 3 ajax calls are completed we show modal window
@@ -121,6 +144,7 @@ var main = function() {
             cache: false,
             success: function(result){
               tabOverview = result;
+              console.log('Overview Ajax success');
             }
           }),
           // load index.html of processed project into global variable tabHtml
@@ -130,6 +154,7 @@ var main = function() {
             cache: false,
             success: function(result){
               tabHtml = "<pre><code id=\"html-code\" class=\"language-markup\">" + Prism.highlight(result, Prism.languages.markup) + "</code></pre>";
+              console.log('HTML Ajax success');
             }
           }),
           // load style.css of processed project into global variable tabCss
@@ -138,40 +163,38 @@ var main = function() {
             url: projectUrl + cssUrl,
             cache: false,
             success: function(result){
-              tabCss = "<pre><code id=\"css-code\" class=\"language-css\">" + Prism.highlight(result, Prism.languages.css) + "</code></pre>"
+              tabCss = "<pre><code id=\"css-code\" class=\"language-css\">" + Prism.highlight(result, Prism.languages.css) + "</code></pre>";
+              console.log('CSS Ajax success');
+            }
+          }),
+          // load universal modal window structure
+          // from modal.html
+          $.ajax({
+            url: "pages/modal.html",
+            cache: false,
+            success: function(result) {
+              console.log('modal.html AJAX success');
+              // fill corresponding modal window with universal modal window structure
+              $modalBody.html(result);
+              console.log('modal body now is' + $modalBody.html());
             }
           })
-        ).then( function (resp1, resp2) {
-          $(target).modal('show');
+        ).then( function () {
+          console.log('Call modal show after AJAX success');
+          console.log('overview is' + tabOverview);
+          // fill overview tab of modal window before modal is opened
+          $modalBody.find("#overview").html(tabOverview);
+          $(target).modal();
         })
 
     }; // end of ajax calls and show modal
 
   };// end of tabPaneContent function
 
-  var modalFill = function () {
+  // tabHandler manages tab switching
+  var tabHandler = function(result) {
 
-    // reset tab names and tab panes
-    console.log('show.bs.modal + resetting tabs')
-    // $(".modal-body ul.nav.nav-tabs li a[href$='#javascript']").text('javascript');
-    // $(".modal-body .tab-content .tab-pane").text('');
-
-    var $modalBody = $(this).find(".modal-body");
-
-    // tabHandler function used in .ajax() call
-    // fills initial Overview tab and manages tab switching
-    var tabHandler = function(result) {
-
-      // fill in .modal-body with tab structure from /portfolio/pages/modal.html
-      $modalBody.html(result);
-      // $(".modal-body").html(result); //
       // change Javascript tab name to SASS/SCSS if necessary
-      // insert overview.html content of the processed project stored in tabOverview
-      // into initial tab pane
-      $modalBody.find("#overview").html(tabOverview);
-      // $(".modal-body").find("#overview").html(tabOverview); //
-
-      //
       console.log(tabJsOrSassIsPresent);
       if (tabJsOrSassIsPresent) { // name Javascript or SASS/SCSS tab
         if ( tabJsOrSassIsPresent === 2 ) {
@@ -206,11 +229,11 @@ var main = function() {
               $tabPrefix.find("#html").html(tabHtml);
               break;
             case '#css':
-                $tabPrefix.find("#css").html(tabCss);
-                break;
+              $tabPrefix.find("#css").html(tabCss);
+              break;
             case '#javascript':
-                $tabPrefix.find("#javascript").html(tabJs);
-                break;
+              $tabPrefix.find("#javascript").html(tabJs);
+              break;
           }
 
         } else {
@@ -223,8 +246,8 @@ var main = function() {
               $tabPrefix.find("#html").html(tabHtml);
               break;
             case '#css':
-                $tabPrefix.find("#css").html(tabCss);
-                break;
+              $tabPrefix.find("#css").html(tabCss);
+              break;
           };
 
         };
@@ -232,28 +255,17 @@ var main = function() {
       }; // end of if (tabJsOrSassIsPresent)
 
       $('.nav-tabs a').on("show.bs.tab", function(event) {
+        console.log('tabSwitcher starts');
         tabSwitcher(event)
       });
 
-    }; // end of tabHandler function
-
-    //Fill modal window with tabs universal structure from /portfolio/pages/modal.html
-    //and callback tabHanler on success
-    $.ajax({
-      url: "pages/modal.html",
-      cache: false,
-      success: function(result) {
-        tabHandler(result)
-      }
-    });
-
-  };
+  }; // end of tabHandler function
 
   // prepare content for modal window
   $(".prj-details").on('click', tabPaneContent);
 
   // fill modal window
-  $(".modal").on("show.bs.modal", modalFill);
+  $(".modal").on("show.bs.modal", tabHandler);
 
   // we manually clear modal-body html on modal hide
   $(".modal").on("hide.bs.modal", function() {
