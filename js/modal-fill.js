@@ -84,6 +84,9 @@ var main = function() {
             cache: false,
             success: function(result){
               tabOverview = result;
+            },
+            error: function(jqXHR, exception) {
+              tabOverview = '<h1> Error' + jqXHR.status + '</h1>' + '<p>' + exception + '</p>'
             }
           }),
           // load index.html of processed project into global variable tabHtml
@@ -93,6 +96,9 @@ var main = function() {
             cache: false,
             success: function(result){
               tabHtml = "<pre><code id=\"html-code\" class=\"language-markup\">" + Prism.highlight(result, Prism.languages.markup) + "</code></pre>";
+            },
+            error: function(jqXHR, exception) {
+              tabHtml = '<h1> Error' + jqXHR.status + '</h1>' + '<p>' + exception + '</p>'
             }
           }),
           // load style.css of processed project into global variable tabCss
@@ -102,6 +108,9 @@ var main = function() {
             cache: false,
             success: function(result){
               tabCss = "<pre><code id=\"css-code\" class=\"language-css\">" + Prism.highlight(result, Prism.languages.css) + "</code></pre>"
+            },
+            error: function(jqXHR, exception) {
+              tabCss = '<h1> Error' + jqXHR.status + '</h1>' + '<p>' + exception + '</p>'
             }
           }),
           // load app.js of processed project into global variable tabJs
@@ -115,6 +124,9 @@ var main = function() {
               } else {
                 tabJs = "<pre><code id=\"js-code\" class=\"language-javascript\">" + Prism.highlight(result, Prism.languages.javascript) + "</code></pre>";
               }
+            },
+            error: function(jqXHR, exception) {
+              tabJs = '<h1> Error' + jqXHR.status + '</h1>' + '<p>' + exception + '</p>'
             }
           }),
           // load universal modal window structure
@@ -127,6 +139,9 @@ var main = function() {
               // fill corresponding modal window with universal modal window structure
               $modalBody.html(result);
               console.log('modal body now is' + $modalBody.html());
+            },
+            error: function(jqXHR, exception) {
+              $modalBody.html('<h1> Error' + jqXHR.status + '</h1>' + '<p>' + exception + '</p>')
             }
           })
         ).then( function () {
@@ -145,6 +160,9 @@ var main = function() {
             success: function(result){
               tabOverview = result;
               console.log('Overview Ajax success');
+            },
+            error: function(jqXHR, exception) {
+              tabOverview = '<h1> Error' + jqXHR.status + '</h1>' + '<p>' + exception + '</p>'
             }
           }),
           // load index.html of processed project into global variable tabHtml
@@ -155,6 +173,9 @@ var main = function() {
             success: function(result){
               tabHtml = "<pre><code id=\"html-code\" class=\"language-markup\">" + Prism.highlight(result, Prism.languages.markup) + "</code></pre>";
               console.log('HTML Ajax success');
+            },
+            error: function(jqXHR, exception) {
+              tabHtml = '<h1> Error' + jqXHR.status + '</h1>' + '<p>' + exception + '</p>'
             }
           }),
           // load style.css of processed project into global variable tabCss
@@ -165,6 +186,9 @@ var main = function() {
             success: function(result){
               tabCss = "<pre><code id=\"css-code\" class=\"language-css\">" + Prism.highlight(result, Prism.languages.css) + "</code></pre>";
               console.log('CSS Ajax success');
+            },
+            error: function(jqXHR, exception) {
+              tabCss = '<h1> Error' + jqXHR.status + '</h1>' + '<p>' + exception + '</p>'
             }
           }),
           // load universal modal window structure
@@ -177,6 +201,9 @@ var main = function() {
               // fill corresponding modal window with universal modal window structure
               $modalBody.html(result);
               console.log('modal body now is' + $modalBody.html());
+            },
+            error: function(jqXHR, exception) {
+              $modalBody.html('<h1> Error' + jqXHR.status + '</h1>' + '<p>' + exception + '</p>')
             }
           })
         ).then( function () {
