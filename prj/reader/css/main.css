@@ -1,0 +1,135 @@
+body {
+  font-family: 'Roboto' sans-serif;
+}
+
+.header {
+  font-size: 30px;
+  font-size: 8vw;
+  background-color: rgb(94, 81, 0);
+  color: rgb(255, 249, 226);
+  margin-bottom: 20px;
+}
+
+.book-on-shelf {
+  margin: 2%;
+}
+
+.book-on-shelf a:hover {
+  text-decoration: none;
+}
+
+.book-on-shelf img {
+  height: 300px;
+  width: auto;
+  margin: 5%;
+}
+
+.book-on-shelf a:hover img {
+  opacity: 0.8;
+}
+
+.book-on-shelf .title {
+  color: rgb(94, 81, 0);
+  text-transform: uppercase;
+}
+
+.book-on-shelf a:hover .title {
+  opacity: 0.9;
+}
+
+.book-on-shelf .author {
+  color: rgb(94, 70, 0);
+}
+
+.book-on-shelf a:hover .author {
+  opacity: 0.9;
+}
+
+.book-on-shelf {
+  margin: 2%;
+}
+
+.book-view img {
+  height: 500px;
+  height: 70vh;
+  width: auto;
+  margin: 5%;
+}
+
+.book-view .title {
+  margin-left: 5%;
+  font-size: 28px;
+  font-size: 3vw;
+  text-transform: uppercase;
+}
+
+.book-view .author {
+  margin-left: 5%;
+}
+
+.book-view .description {
+  margin-top: 8%;
+  margin-left: 5%;
+}
+
+.book-view a {
+  color: rgb(94, 81, 0);
+  margin: 5% 5% 5% 5%;
+  font-size: 18px;
+}
+
+.book-view a:hover {
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.navigation {
+  height: 50px;
+  height: 10vh;
+  width: auto;
+  background-color: rgba(94, 81, 0, 0.7);
+  display: inline-block;
+  border-radius: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+a:hover .navigation {
+  opacity: 0.6;
+}
+
+.right {
+  text-align: right;
+}
+
+.left {
+  text-align: left;
+}
+
+.chapter-title {
+  font-size: 24px;
+  font-size: 3vw;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.chapter-book {
+  font-size: 24px;
+  font-size: 3vw;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.chapter-text {
+  font-size: 16px;
+  font-size: 1.5vw;
+  text-align: justify;
+}
+
+a:hover . {
+  opacity: 0.6;
+}
+
+.book-view a:hover.btn.btn-default {
+  background-color: rgba(94, 81, 0, 0.5);
+}

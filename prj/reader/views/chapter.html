@@ -1,0 +1,21 @@
+<div>
+  <h2 class="chapter-book">{{ book.author}} "{{ book.title }}"</h2>
+  <h2 class="chapter-title"> {{ chapter.title }} </h2>
+  <div ng-repeat="paragraph in chapter.paragraphs">
+    <p class="chapter-text">
+      {{ paragraph }}
+    </p>
+  </div>
+  <div class="row">
+      <div class="col-xs-6 left">
+        <a href="#/books/{{ currentBookIndex }}/chapters/{{ previousChapterIndex }}">
+          <img src="css/back.svg" class="navigation left"></img>
+        </a>
+      </div>
+    <div class="col-xs-6 right">
+      <a href="#/books/{{ currentBookIndex }}/chapters/{{ nextChapterIndex }}">
+        <img src="css/next.svg" class="navigation"></img>
+      </a>
+    </div>
+  </div>
+</div>
